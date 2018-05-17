@@ -77,6 +77,7 @@ public class CursoServlet extends HttpServlet {
             p.setInt(4, qtde);
             p.setDate(5, new java.sql.Date(data.getTime()));
             p.execute();
+            p.close();
             
             saida.println("Concluído!");
         } catch (SQLException ex) {
