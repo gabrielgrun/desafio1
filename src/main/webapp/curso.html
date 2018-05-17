@@ -13,8 +13,13 @@ and open the template in the editor.
         <!--Formulário que envia nome e cpf para servlet /cliente -->
         <form name="form1" method="post" action="/desafio/CursoServlet">
             ID: <input type="number" name="id" value=""> <br />
-            Nome: <input type="text" name="nome" value=""> <br />
-            Turno: <input type="text" name="turno" value=""> <br />
+            Nome do Curso: <input type="text" name="nome" value=""> <br />
+            Turno: <select name="turno">
+                <option value="M">Manhã</option>
+                <option value="T">Tarde</option>
+                <option value="N">Noite</option>
+            </select>
+            <br>
             Quantidade de Estudantes: <input type="number" name="qtde" value=""> <br />
             Data de Matrícula: <input type="date" name="data" value=""> <br />
             <input type="submit" value="Enviar"/>
