@@ -8,21 +8,25 @@ and open the template in the editor.
     <head>
         <title>Curso</title>
         <meta charset="UTF-8">
+        <link href="estilo.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <!--Formulário que envia nome e cpf para servlet /cliente -->
-        <form name="form1" method="post" action="/desafio/CursoServlet">
-            ID: <input type="number" name="id" value=""> <br />
-            Nome do Curso: <input type="text" name="nome" value=""> <br />
-            Turno: <select name="turno">
+        <form class="form" name="form1" method="post" action="/desafio/CursoServlet">
+            <fieldset>
+            <legend>Formulário de Cursos</legend>
+            <label>ID: <input type="number" name="id" value=""></label> <br />
+            <label>Nome do Curso: <input type="text" name="nome" value=""> </label> <br />
+            <label>Turno: <select name="turno">
                 <option value="M">Manhã</option>
                 <option value="T">Tarde</option>
                 <option value="N">Noite</option>
-            </select>
+            </select> </label>
             <br>
-            Quantidade de Estudantes: <input type="number" name="qtde" value=""> <br />
-            Data de Matrícula: <input type="date" name="data" value=""> <br />
-            <input type="submit" value="Enviar"/>
+            <label>Quantidade de Estudantes: <input type="number" name="qtde" value=""></label> <br />
+            <label>Data de Matrícula: <input type="date" name="data" value=""></label> <br />
+            <input class="submit" type="submit" value="Enviar"/>
+            </fieldset>
         </form>
     </body>
 </html>

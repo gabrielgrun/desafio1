@@ -1,0 +1,16 @@
+html {
+    width: 100%;
+}
+.form {
+    text-align: center;
+    margin: 10px;
+}
+fieldset{
+    margin-top: 200px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+.submit{
+    
+}
+
