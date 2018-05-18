@@ -11,6 +11,11 @@ fieldset{
     margin-right: 500px;
 }
 .submit{
-    
+    font-weight: bold;
 }
-
+label{
+    font-weight: bold;
+    display:block;
+    text-align: right;
+    padding-right: 150px;
+}
